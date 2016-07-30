@@ -1,0 +1,8 @@
+对 APP 本身 libs 的与 hook 系统 so 库不同
+
+直接仿 dump2dex 写的同学可以已经看见了，命中不了 hook 目标
+
+原因是 Cydia Substrate 模块运行在 app_process 进程中，启动时 APP  的 so 还没有加载，也就找不到相应符号
+
+这里提供一个解决办法：
+ Cydia Substrate 模块中主动加载目标函数，再 hook
