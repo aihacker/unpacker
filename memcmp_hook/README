@@ -1,0 +1,4 @@
+360在dex加载的时候，没有调用 dvmDexFileOpenPartial ，而是自实现了此函数的功能，DEX 加载前调用 memcmp 比较做了简单 MAGIC 校验，此处 hook 可脱壳
+
+http://blog.csdn.net/justfwd/article/details/49886585
+
