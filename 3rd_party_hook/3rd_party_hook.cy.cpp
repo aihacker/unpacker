@@ -2,7 +2,7 @@
 #include <substrate.h>
 #include <stdio.h>
 
-#define LOG_TAG "SUBhook"
+#define LOG_TAG "3rd_party_hook"
 
 #define LOGI(...)  __android_log_print(ANDROID_LOG_INFO, LOG_TAG, __VA_ARGS__)
 
